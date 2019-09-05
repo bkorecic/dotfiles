@@ -2,6 +2,8 @@
 # wm independent hotkeys
 #
 
+# launch chromium
+
 super + n
 	chromium
 
