@@ -55,7 +55,7 @@ Lock Session=none,Meta+L\tCtrl+Alt+L\tScreensaver,Lock Session
 Log Out=none,none,Log Out
 Log Out Without Confirmation=none,none,Log Out Without Confirmation
 Reboot Without Confirmation=none,none,Reboot Without Confirmation
-_k_friendly_name=System Settings
+_k_friendly_name=ksmserver
 
 [kwin]
 Activate Window Demanding Attention=none,Ctrl+Alt+A,Activate Window Demanding Attention
@@ -226,7 +226,7 @@ Toggle Keyboard Backlight=Keyboard Light On/Off,Keyboard Light On/Off,Toggle Key
 _k_friendly_name=Power Management
 
 [plasmashell]
-_k_friendly_name=Activity switching
+_k_friendly_name=Plasma
 activate task manager entry 1=none,Meta+1,Activate Task Manager Entry 1
 activate task manager entry 10=,Meta+0,Activate Task Manager Entry 10
 activate task manager entry 2=none,Meta+2,Activate Task Manager Entry 2
