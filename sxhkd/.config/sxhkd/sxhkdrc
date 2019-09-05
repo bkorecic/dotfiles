@@ -2,6 +2,9 @@
 # wm independent hotkeys
 #
 
+super + n
+	chromium
+
 # terminal emulator
 super + Return
 	konsole
