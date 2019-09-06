@@ -13,27 +13,27 @@ IntensityEffect=2
 [ColorEffects:Inactive]
 ChangeSelectionColor=true
 Color=112,111,110
-ColorAmount=0.025000000000000001
+ColorAmount=0.025
 ColorEffect=2
-ContrastAmount=0.10000000000000001
+ContrastAmount=0.1
 ContrastEffect=2
 Enable=false
 IntensityAmount=0
 IntensityEffect=0
 
 [Colors:Button]
-BackgroundAlternate=64,69,82
-BackgroundNormal=30,34,51
-DecorationFocus=197,14,210
-DecorationHover=197,14,210
+BackgroundAlternate=77,77,77
+BackgroundNormal=49,54,59
+DecorationFocus=61,174,233
+DecorationHover=61,174,233
 ForegroundActive=61,174,233
-ForegroundInactive=102,106,115
+ForegroundInactive=189,195,199
 ForegroundLink=41,128,185
-ForegroundNegative=237,37,78
-ForegroundNeutral=255,106,0
-ForegroundNormal=195,199,209
-ForegroundPositive=113,247,159
-ForegroundVisited=82,148,226
+ForegroundNegative=218,68,83
+ForegroundNeutral=246,116,0
+ForegroundNormal=239,240,241
+ForegroundPositive=39,174,96
+ForegroundVisited=127,140,141
 
 [Colors:Complementary]
 BackgroundAlternate=59,64,69
@@ -51,64 +51,68 @@ ForegroundVisited=61,174,230
 
 [Colors:Selection]
 BackgroundAlternate=29,153,243
-BackgroundNormal=197,14,210
-DecorationFocus=197,14,210
-DecorationHover=197,14,210
+BackgroundNormal=61,174,233
+DecorationFocus=61,174,233
+DecorationHover=61,174,233
 ForegroundActive=252,252,252
-ForegroundInactive=211,218,227
+ForegroundInactive=239,240,241
 ForegroundLink=253,188,75
-ForegroundNegative=237,37,78
-ForegroundNeutral=255,106,0
-ForegroundNormal=254,254,254
-ForegroundPositive=113,247,159
+ForegroundNegative=218,68,83
+ForegroundNeutral=246,116,0
+ForegroundNormal=239,240,241
+ForegroundPositive=39,174,96
 ForegroundVisited=189,195,199
 
 [Colors:Tooltip]
-BackgroundAlternate=47,52,63
-BackgroundNormal=53,57,69
-DecorationFocus=197,14,210
-DecorationHover=197,14,210
+BackgroundAlternate=77,77,77
+BackgroundNormal=49,54,59
+DecorationFocus=61,174,233
+DecorationHover=61,174,233
 ForegroundActive=61,174,233
-ForegroundInactive=102,106,115
+ForegroundInactive=189,195,199
 ForegroundLink=41,128,185
-ForegroundNegative=237,37,78
-ForegroundNeutral=255,106,0
-ForegroundNormal=211,218,227
-ForegroundPositive=113,247,159
-ForegroundVisited=82,148,226
+ForegroundNegative=218,68,83
+ForegroundNeutral=246,116,0
+ForegroundNormal=239,240,241
+ForegroundPositive=39,174,96
+ForegroundVisited=127,140,141
 
 [Colors:View]
-BackgroundAlternate=20,26,33
-BackgroundNormal=22,25,37
-DecorationFocus=197,14,210
-DecorationHover=197,14,210
-ForegroundActive=0,193,228
-ForegroundInactive=102,106,115
-ForegroundLink=82,148,226
-ForegroundNegative=237,37,78
-ForegroundNeutral=255,106,0
-ForegroundNormal=211,218,227
-ForegroundPositive=113,247,159
-ForegroundVisited=124,183,255
+BackgroundAlternate=49,54,59
+BackgroundNormal=35,38,41
+DecorationFocus=61,174,233
+DecorationHover=61,174,233
+ForegroundActive=61,174,233
+ForegroundInactive=189,195,199
+ForegroundLink=41,128,185
+ForegroundNegative=218,68,83
+ForegroundNeutral=246,116,0
+ForegroundNormal=239,240,241
+ForegroundPositive=39,174,96
+ForegroundVisited=127,140,141
 
 [Colors:Window]
-BackgroundAlternate=47,52,63
-BackgroundNormal=24,27,40
-DecorationFocus=197,14,210
-DecorationHover=197,14,210
+BackgroundAlternate=77,77,77
+BackgroundNormal=49,54,59
+DecorationFocus=61,174,233
+DecorationHover=61,174,233
 ForegroundActive=61,174,233
-ForegroundInactive=102,106,115
+ForegroundInactive=189,195,199
 ForegroundLink=41,128,185
-ForegroundNegative=237,37,78
-ForegroundNeutral=255,106,0
-ForegroundNormal=211,218,227
-ForegroundPositive=113,247,159
-ForegroundVisited=179,13,191
+ForegroundNegative=218,68,83
+ForegroundNeutral=246,116,0
+ForegroundNormal=239,240,241
+ForegroundPositive=39,174,96
+ForegroundVisited=127,140,141
+
+[DirSelect Dialog]
+DirSelectDialog Size=640,480
+History Items[$e]=file:$HOME/downloads
 
 [General]
 BrowserApplication=chromium.desktop
-ColorScheme=Sweet
-Name=Sweet
+ColorScheme=BreezeDark
+Name=Breeze Dark
 XftAntialias=true
 XftHintStyle=hintmedium
 XftSubPixel=none
@@ -117,12 +121,12 @@ shadeSortColumn=true
 toolBarFont=Noto Sans,10,-1,5,50,0,0,0,0,0
 
 [Icons]
-Theme=candy-icons
+Theme=breeze-dark
 
 [KDE]
-LookAndFeelPackage=Sweet
+LookAndFeelPackage=org.kde.breezedark.desktop
 contrast=4
-widgetStyle=kvantum
+widgetStyle=Breeze
 
 [KFileDialog Settings]
 Allow Expansion=false
@@ -144,9 +148,9 @@ Speedbar Width=107
 View Style=DetailTree
 
 [WM]
-activeBackground=47,52,63
-activeBlend=47,52,63
-activeForeground=211,218,227
-inactiveBackground=47,52,63
-inactiveBlend=47,52,63
-inactiveForeground=102,106,115
+activeBackground=49,54,59
+activeBlend=255,255,255
+activeForeground=239,240,241
+inactiveBackground=49,54,59
+inactiveBlend=75,71,67
+inactiveForeground=127,140,141
