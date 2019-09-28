@@ -50,12 +50,21 @@ let python_hightlight_all=1
 Plugin 'vim-airline/vim-airline'
 let g:airline_theme='breezy'
 
+" Asynchronous Lint Engine
+Plugin 'dense-analysis/ale'
+let g:ale_set_highlights=0
+
+" Vimpyter
+Plugin 'szymonmaszke/vimpyter'
+
 " All plugins must be added before
 " the following line
 call vundle#end()
 filetype plugin indent on
 
-"""""""""""""""""""""""""""""" " General """"""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""
+" General
+""""""""""""""""""""""""""""""
 " Enable syntax highlighting
 syntax enable
 
@@ -65,6 +74,8 @@ set termguicolors
 colorscheme breezy
 
 set ruler
+
+let NERDTreeShowHidden=1
 
 """"""""""""""""""""""""""""""
 " Text, tab, indent
@@ -122,3 +133,6 @@ nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
+
+" NERDTree Toggle
+nnoremap <C-o> :NERDTreeToggle<Cr>
