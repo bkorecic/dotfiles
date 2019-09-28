@@ -1,0 +1,5 @@
+[Desktop Entry]
+Type=XSession
+Exec=env KDEWM=/usr/bin/bspwm /usr/bin/startkde
+DesktopNames=KDE
+Name=Plasma (bspwm)
