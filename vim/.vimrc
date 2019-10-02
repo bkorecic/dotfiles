@@ -9,17 +9,15 @@
 "
 " see :h vundle for more details or wiki for FAQ
 " Install vundle if not already installed
-if has("user_commands")
-  " Setting up Vundle - the vim plugin bundler
-  let VundleInstalled=0
-  let vundle_readme=expand('~/.vim/bundle/vundle/README.md')
-  if !filereadable(vundle_readme)
+" Setting up Vundle - the vim plugin bundler
+let VundleInstalled=0
+let vundle_readme=expand('~/.vim/bundle/Vundle.vim/README.md')
+if !filereadable(vundle_readme)
     echo "Installing Vundle.."
     echo ""
     silent !mkdir -p ~/.vim/bundle
     silent !git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
     let VundleInstalled=1
-  endif
 endif
 " Required
 filetype off
@@ -52,9 +50,6 @@ let g:airline_theme='breezy'
 " Asynchronous Lint Engine
 Plugin 'dense-analysis/ale'
 let g:ale_set_highlights=0
-
-" Vimpyter
-Plugin 'szymonmaszke/vimpyter'
 
 " All plugins must be added before
 " the following line
