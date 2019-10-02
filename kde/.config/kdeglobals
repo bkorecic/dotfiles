@@ -2,11 +2,13 @@
 update_info=filepicker.upd:filepicker-remove-old-previews-entry,fonts_global.upd:Fonts_Global,fonts_global_toolbar.upd:Fonts_Global_Toolbar
 
 [ColorEffects:Disabled]
+ChangeSelectionColor=
 Color=56,56,56
 ColorAmount=0
 ColorEffect=0
 ContrastAmount=0.65
 ContrastEffect=1
+Enable=
 IntensityAmount=0.1
 IntensityEffect=2
 
@@ -114,7 +116,7 @@ BrowserApplication=chromium.desktop
 ColorScheme=BreezeDark
 Name=Breeze Dark
 XftAntialias=true
-XftHintStyle=hintmedium
+XftHintStyle=
 XftSubPixel=none
 dbfile=/home/bkorecic/.mozilla/firefox/ii2113hf.default/places.sqlite
 shadeSortColumn=true
@@ -146,6 +148,10 @@ Sort directories first=true
 Sort reversed=false
 Speedbar Width=107
 View Style=DetailTree
+
+[KScreen]
+ScaleFactor=1.5
+ScreenScaleFactors=eDP1=1.5;DP1=1.5;DP2=1.5;HDMI1=1.5;HDMI2=1.5;VIRTUAL1=1.5;
 
 [KShortcutsDialog Settings]
 Dialog Size=600,480
