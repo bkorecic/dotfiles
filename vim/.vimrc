@@ -51,6 +51,9 @@ let g:airline_theme='breezy'
 Plugin 'dense-analysis/ale'
 let g:ale_set_highlights=0
 
+" auto-pairs
+Plugin 'jiangmiao/auto-pairs'
+
 " All plugins must be added before
 " the following line
 call vundle#end()
