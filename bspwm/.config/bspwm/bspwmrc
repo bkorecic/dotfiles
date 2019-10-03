@@ -17,3 +17,4 @@ bspc config focused_border_color '#18a373'
 
 bspc rule -a yakuake state=floating
 bspc rule -a '*:zathura' state=tiled
+bspc rule -a plasmashell state=floating

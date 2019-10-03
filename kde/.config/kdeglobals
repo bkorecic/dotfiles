@@ -109,7 +109,7 @@ ForegroundVisited=127,140,141
 
 [DirSelect Dialog]
 DirSelectDialog Size=640,480
-History Items[$e]=file:$HOME/downloads
+History Items[$e]=file:///home,file:$HOME,file:$HOME/downloads
 
 [General]
 BrowserApplication=chromium.desktop
