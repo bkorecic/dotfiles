@@ -51,8 +51,8 @@ let g:airline_theme='breezy'
 Plugin 'dense-analysis/ale'
 let g:ale_set_highlights=0
 
-" auto-pairs
-Plugin 'jiangmiao/auto-pairs'
+" vim-closer
+Plugin 'rstacruz/vim-closer'
 
 " All plugins must be added before
 " the following line
@@ -62,6 +62,8 @@ filetype plugin indent on
 """"""""""""""""""""""""""""""
 " General
 """"""""""""""""""""""""""""""
+" Use system clipboard
+set clipboard=unnamedplus
 " Enable syntax highlighting
 syntax enable
 
