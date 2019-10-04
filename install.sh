@@ -43,7 +43,7 @@ done
 
 # KDE-bspwm XSession
 
-cp plasma-bspwm.desktop /usr/share/xsessions/
+cp .plasma-bspwm.desktop /usr/share/xsessions/plasma-bspwm.desktop
 
 # refresh sxhkd keys
 pkill -USR1 -x sxhkd
