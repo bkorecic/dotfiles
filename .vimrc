@@ -29,7 +29,6 @@ Plug 'lervag/vimtex'
 
 " vim-airline
 Plug 'vim-airline/vim-airline'
-let g:airline_theme='dracula'
 
 " vim-closer
 Plug 'rstacruz/vim-closer'
@@ -45,9 +44,6 @@ Plug 'SirVer/ultisnips'
 
 " vim-highlightedyank
 Plug 'machakann/vim-highlightedyank'
-
-" Dracula theme
-Plug 'dracula/vim',{'name':'dracula'}
 
 " ALE
 Plug 'dense-analysis/ALE'
