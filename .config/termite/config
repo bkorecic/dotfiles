@@ -1,0 +1,25 @@
+[options]
+font = DejaVuSansMono 12
+
+[colors]
+
+foreground = #99c3e0
+background = #090913
+cursor     = #99c3e0
+
+color0  = #090913
+color8  = #6b889c
+color1  = #551D63
+color9  = #551D63
+color2  = #233789
+color10 = #233789
+color3  = #234FA0
+color11 = #234FA0
+color4  = #4F51AA
+color12 = #4F51AA
+color5  = #5353AA
+color13 = #5353AA
+color6  = #9443A0
+color14 = #9443A0
+color7  = #99c3e0
+color15 = #99c3e0
