@@ -33,6 +33,6 @@ Credits to [Liam Wong](https://www.liamwong.com/) for the wallpapers.
 
 ### TODO
 
-Complete dependency list
-Add/modify polybar modules
-Install and config zsh
+* Complete dependency list
+* Add/modify polybar modules
+* Install and config zsh
