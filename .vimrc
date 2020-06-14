@@ -29,6 +29,7 @@ Plug 'lervag/vimtex'
 
 " vim-airline
 Plug 'vim-airline/vim-airline'
+let g:airline_theme = 'violet'
 
 " vim-closer
 Plug 'rstacruz/vim-closer'
@@ -63,7 +64,7 @@ filetype plugin indent on
 " utf-8
 set encoding=utf-8
 " Use system clipboard
-set clipboard=unnamed
+set clipboard=unnamedplus
 " Enable syntax highlighting
 syntax enable
 " Enable backspace
