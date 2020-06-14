@@ -27,6 +27,7 @@ Credits to [Liam Wong](https://www.liamwong.com/) for the wallpapers.
 * Termite
 * Vim
 * feh
+* DejaVu Sans Mono font
 
 ### TODO
 
