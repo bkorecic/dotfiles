@@ -1,5 +1,7 @@
 # Dotfiles
 
+![Screenshot](screen.png?raw=true "Screenshot")
+
 ### Installation
 For easy management, use [yadm](https://github.com/TheLocehiliosan/yadm) and then `yadm clone`
 
