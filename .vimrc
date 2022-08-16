@@ -29,7 +29,7 @@ Plug 'lervag/vimtex'
 
 " vim-airline
 Plug 'vim-airline/vim-airline'
-let g:airline_theme = 'violet'
+" let g:airline_theme = 'violet'
 
 " vim-closer
 Plug 'rstacruz/vim-closer'

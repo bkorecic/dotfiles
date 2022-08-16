@@ -5,7 +5,6 @@ sxhkd &
 picom &
 $HOME/.config/polybar/launch.sh &
 $HOME/.fehbg & # set wallpaper
-polybar-reload &
 
 bspc monitor -d I II III IV V VI
 
@@ -22,6 +21,20 @@ bspc config bottom_padding       10
 
 bspc config focused_border_color '#18a373'
 
+# startup layout
+bspc rule -a firefox:Navigator -o node=@^1:^1:/
+bspc rule -a Alacritty:Alacritty -o node=@^1:^2:/
+bspc rule -a Alacritty:Alacritty -o node=@^1:^3:/
+bspc rule -a TelegramDesktop:telegram-desktop -o node=@^1:^4:/
+bspc rule -a KeePassXC:keepassxc -o node=@^1:^5:/
+nm-applet &
+firefox &
+alacritty &
+alacritty &
+telegram-desktop &
+keepassxc &
+
+# rules
 bspc rule -a yakuake state=floating
 bspc rule -a '*:zathura' state=tiled
 bspc rule -a plasmashell state=floating
