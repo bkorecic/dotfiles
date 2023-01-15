@@ -4,6 +4,9 @@ require('lspconfig').ccls.setup{}
 -- Lualine
 require('lualine').setup()
 
+-- nvim-tree
+require('nvim-tree').setup()
+
 -- Snippy
 local snippy = require('snippy')
 snippy.setup({

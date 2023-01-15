@@ -28,6 +28,8 @@ return require('packer').startup(function(use)
 	use 'hrsh7th/cmp-buffer'
 	use 'hrsh7th/cmp-path'
 	use 'hrsh7th/cmp-cmdline'
+	use 'nvim-tree/nvim-tree.lua'
+	use 'nvim-tree/nvim-web-devicons'
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
 	if packer_bootstrap then
