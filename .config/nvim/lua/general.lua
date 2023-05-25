@@ -1,5 +1,5 @@
 -- Clipboard
-vim.opt.clipboard = 'unnamedplus'
+vim.opt.clipboard = "unnamedplus"
 
 -- Indentation
 vim.opt.autoindent = true
@@ -13,5 +13,5 @@ vim.opt.wrap = false
 
 -- Searching
 vim.opt.wildmenu = true
-vim.opt.wildmode = 'full'
+vim.opt.wildmode = "full"
 vim.opt.incsearch = true

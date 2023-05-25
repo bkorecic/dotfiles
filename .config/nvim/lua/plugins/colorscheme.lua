@@ -1,23 +1,23 @@
 return {
-	{ 
-		'ellisonleao/gruvbox.nvim', 
+	{
+		"ellisonleao/gruvbox.nvim",
 		lazy = false,
 		priority = 1000,
 		opts = {
-			contrast = 'hard',
+			contrast = "hard",
 		},
 		init = function()
-			vim.cmd('colorscheme gruvbox')
+			vim.cmd("colorscheme gruvbox")
 		end,
 	},
 	{
-		'nvim-treesitter/nvim-treesitter',
-		build = ':TSUpdate',
+		"nvim-treesitter/nvim-treesitter",
+		build = ":TSUpdate",
 		config = function()
-			require('nvim-treesitter.configs').setup {
+			require("nvim-treesitter.configs").setup({
 				ensure_installed = "all",
-				highlight = { enable = true, }
-			}
+				highlight = { enable = true },
+			})
 		end,
-	}
+	},
 }
