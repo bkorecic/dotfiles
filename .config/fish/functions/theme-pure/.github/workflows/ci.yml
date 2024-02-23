@@ -1,0 +1,77 @@
+# yamllint disable rule:braces
+# yamllint disable rule:indentation
+---
+name: Run tests on CI
+# yamllint disable-line rule:truthy
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - "**.fish"
+      - ".github/**/*.yml"
+      - "!conf.d/pure.fish"
+
+  pull_request:
+    types:
+      - opened
+      - reopened
+      - synchronize
+      - ready_for_review
+    paths:
+      - "**.fish"
+      - ".github/**/*.yml"
+
+jobs:
+  test-container:
+    name: Test on fish ${{ matrix.version.fish }} on Docker
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        version: [
+            { fish: 3.3.1, alpine: 3.15 }, # for Ubuntu 22.04 LTS
+            { fish: 3.4.1, alpine: 3.16 },
+            { fish: 3.5.1, alpine: 3.17 },
+            { fish: 3.6.1, alpine: 3.18 },
+            # { fish: 3.6.2, alpine: 'edge' },
+          ]
+    steps:
+      - uses: actions/checkout@v2
+      - run: make build-pure-on FISH_VERSION=${{ matrix.version.fish }}
+      - run: docker --version
+      - run: make test-pure-on FISH_VERSION=${{ matrix.version.fish }}
+
+  test-nixos:
+    name: Test `pure` with Fish ${{ matrix.version.fish }} on NixOS container
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        version: [
+            { fish: 3.6.1, alpine: 3.18 },
+            # { fish: 3.6.2, alpine: 'edge' },
+          ]
+    steps:
+      - uses: actions/checkout@v2
+      - run: make build-pure-on-nix FISH_VERSION=${{ matrix.version.fish }}
+      - run: docker --version
+      - run: make test-pure-on-nix FISH_VERSION=${{ matrix.version.fish }}
+
+  # test-macos:
+  #   name: Test on fish on MacOS
+  #   runs-on: macos-latest
+  #   steps:
+  #     - uses: actions/checkout@v2
+  #     - name: Install Fish
+  #       run: brew install fish
+  #     - name: Install Fisher > Fishtape > Pure
+  #       run: curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher jorgebucaran/fishtape ./
+  #       shell: fish {0}
+  #     - name: Test Pure
+  #       run: fishtape tests/*.test.fish
+  #       shell: fish {0}
+
+  bump-version: # Bump when on master
+    needs: [test-container]
+    if: contains(github.ref, 'master')
+    uses: ./.github/workflows/bump-version.yml
+    secrets: inherit

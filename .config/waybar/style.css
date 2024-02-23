@@ -1,0 +1,73 @@
+@import "frappe.css";
+
+* {
+    /* `otf-font-awesome` is required to be installed for icons */
+    /* font-family: "Font Awesome 6 Free", "FiraCode Nerd Font Propo"; */
+    font-family: "FiraCode Nerd Font Propo";
+    font-size: 12px;
+}
+
+window#waybar {
+    background: transparent;
+    color: @mauve;
+}
+
+button {
+    /* Use box-shadow instead of border so the text isn't offset */
+    box-shadow: inset 0 -10px transparent;
+    /* Avoid rounded borders under each button name */
+    border: none;
+    border-radius: 0;
+}
+
+/* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
+button:hover {
+    background: inherit;
+    box-shadow: inset 0 -2px #ffffff;
+}
+
+#workspaces button {
+    color: @mauve;
+    padding: 0 5px;
+    border-radius: 10px;
+}
+
+#workspaces button.active {
+    background-color: @surface0;
+}
+
+#pulseaudio,
+#network,
+#backlight,
+#battery,
+#tray,
+#clock {
+    margin-top: 3px;
+    padding: 0 8px;
+    background-color: @crust;
+    border-radius: 10px;
+}
+
+#window,
+#workspaces {
+    margin: 0 4px;
+}
+
+/* If workspaces is the leftmost module, omit left margin */
+.modules-left > widget:first-child > #workspaces {
+    margin-left: 0;
+}
+
+/* If workspaces is the rightmost module, omit right margin */
+.modules-right > widget:last-child > #workspaces {
+    margin-right: 0;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    background-color: #eb4d4b;
+}
