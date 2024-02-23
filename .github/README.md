@@ -5,34 +5,30 @@
 ### Installation
 For easy management, use [yadm](https://github.com/TheLocehiliosan/yadm) and then `yadm clone`
 
-### Info about my system
+### General info
+
+The most relevant components are shown in this table:
 
 |   Component       | Using...   |
 |-------------------|------------|
 | Distribution      | Arch Linux |
-| Display server    | Xorg       |
-| Windows manager   | bspwm      |
-| Display manager   | LightDM    |
-| Xorg compositor   | Picom      |
-| Bar               | Polybar    |
-| Terminal emulator | Termite    |
-| Text editor       | Vim        |
+| Display server    | Wayland    |
+| Compositor + WM   | Hyprland   |
+| Bar               | Waybar     |
+| Shell             | Fish       |
+| Terminal emulator | Alacritty  |
+| Text editor       | Neovim     |
 
-The colorscheme was generated using [pywal](https://github.com/dylanaraps/pywal/) on the wallpaper `2`.
-
-Credits to [Liam Wong](https://www.liamwong.com/) for the wallpapers.
+Credits to [Liam Wong](https://www.liamwong.com/) for the wallpaper.
 
 ### Dependencies (incomplete)
-* bspwm
-* Picom
-* Polybar
-* Termite
-* Vim
-* feh
-* DejaVu Sans Mono font
+* Wayland
+* Hyprland
+* Waybar
+* Alacritty
+* Neovim
+* FiraCode Nerd Font
 
 ### TODO
 
 * Complete dependency list
-* Add/modify polybar modules
-* Install and config zsh
