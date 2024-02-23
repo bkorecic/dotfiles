@@ -11,13 +11,14 @@ The most relevant components are shown in this table:
 
 |   Component       | Using...   |
 |-------------------|------------|
-| Distribution      | Arch Linux |
-| Display server    | Wayland    |
-| Compositor + WM   | Hyprland   |
-| Bar               | Waybar     |
-| Shell             | Fish       |
-| Terminal emulator | Alacritty  |
-| Text editor       | Neovim     |
+| Distribution      | [Arch Linux](https://archlinux.org)                    |
+| Display server    | [Wayland](https://wayland.freedesktop.org/)            |
+| Compositor        | [Hyprland](https://hyprland.org/)                      |
+| Bar               | [Waybar](https://github.com/Alexays/Waybar)            |
+| Shell             | [Fish](https://fishshell.com)                          |
+| Terminal emulator | [Alacritty](https://alacritty.org)                     |
+| Text editor       | [Neovim](https://neovim.io)                            |
+| Theme             | [Catppuccin](https://github.com/catppuccin/catppuccin) |
 
 Credits to [Liam Wong](https://www.liamwong.com/) for the wallpaper.
 
