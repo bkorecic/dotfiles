@@ -1,18 +1,24 @@
+import:
+  - ~/.config/alacritty/catppuccin/catppuccin-frappe.yml
+
 font:
   normal:
-    family: DejaVu Sans Mono
-    style: Book
+    family: FiraCode Nerd Font Mono
+    style: Retina
 
   bold:
-    family: DejaVu Sans Mono
+    family: FiraCode Nerd Font Mono
     style: Bold
 
   italic:
-    family: DejaVu Sans Mono
+    family: FiraCode Nerd Font Mono
     style: Oblique
 
   bold_italic:
-    family: DejaVu Sans Mono
+    family: FiraCode Nerd Font Mono
     style: Bold Oblique
 
-  size: 16
+  size: 14
+
+env:
+  TERM: xterm-256color
