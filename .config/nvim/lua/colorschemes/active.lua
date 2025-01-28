@@ -1,0 +1,1 @@
+/home/bkorecic/.config/nvim/lua/colorschemes/catppuccin-frappe.lua

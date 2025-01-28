@@ -1,0 +1,51 @@
+Setting up watches.
+Watches established.
+[2025-01-10 04:44:10.958] [info] Using configuration file /home/bkorecic/.config/waybar/config
+[2025-01-10 04:44:10.959] [info] Unable to receive desktop appearance: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name is not activatable
+[2025-01-10 04:44:10.959] [info] Using CSS file /home/bkorecic/.config/waybar/style.css
+[2025-01-10 04:44:10.963] [info] Hyprland IPC starting
+[2025-01-10 04:44:10.963] [info] Loading persistent workspaces from Hyprland workspace rules
+[2025-01-10 04:44:10.990] [warning] Requested height: 5 is less than the minimum height: 24 required by the modules
+[2025-01-10 04:44:10.990] [info] Bar configured (width: 1280, height: 24) for output: eDP-1
+Terminated
+Setting up watches.
+Watches established.
+[2025-01-21 13:08:06.347] [info] Using configuration file /home/bkorecic/.config/waybar/config
+[2025-01-21 13:08:06.348] [info] Unable to receive desktop appearance: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name is not activatable
+[2025-01-21 13:08:06.348] [info] Using CSS file /home/bkorecic/.config/waybar/style.css
+[2025-01-21 13:08:06.352] [info] Hyprland IPC starting
+[2025-01-21 13:08:06.352] [info] Loading persistent workspaces from Hyprland workspace rules
+[2025-01-21 13:08:06.378] [warning] Requested height: 5 is less than the minimum height: 24 required by the modules
+[2025-01-21 13:08:06.378] [info] Bar configured (width: 1280, height: 24) for output: eDP-1
+
+(waybar:1385): Gdk-WARNING **: 13:08:06.964: ../gtk/gdk/wayland/gdkcursor-wayland.c:243 cursor image size (64x64) not an integermultiple of scale (3)
+[2025-01-21 13:08:25.716] [info] Quitting.
+Setting up watches.
+Watches established.
+[2025-01-21 13:08:28.643] [info] Using configuration file /home/bkorecic/.config/waybar/config
+[2025-01-21 13:08:28.644] [info] Unable to receive desktop appearance: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name is not activatable
+[2025-01-21 13:08:28.644] [info] Using CSS file /home/bkorecic/.config/waybar/style.css
+[2025-01-21 13:08:28.648] [info] Hyprland IPC starting
+[2025-01-21 13:08:28.649] [info] Loading persistent workspaces from Hyprland workspace rules
+[2025-01-21 13:08:28.671] [warning] Requested height: 5 is less than the minimum height: 24 required by the modules
+[2025-01-21 13:08:28.671] [info] Bar configured (width: 1280, height: 24) for output: eDP-1
+
+(waybar:1536): Gdk-WARNING **: 13:09:08.267: ../gtk/gdk/wayland/gdkcursor-wayland.c:243 cursor image size (64x64) not an integermultiple of scale (3)
+Terminated
+Setting up watches.
+Watches established.
+[2025-01-24 14:04:36.000] [info] Using configuration file /home/bkorecic/.config/waybar/config
+[2025-01-24 14:04:36.001] [info] Unable to receive desktop appearance: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name is not activatable
+[2025-01-24 14:04:36.001] [info] Using CSS file /home/bkorecic/.config/waybar/style.css
+[2025-01-24 14:04:36.006] [info] Hyprland IPC starting
+[2025-01-24 14:04:36.007] [info] Loading persistent workspaces from Hyprland workspace rules
+[2025-01-24 14:04:36.022] [info] Loading persistent workspaces from Hyprland workspace rules
+[2025-01-24 14:04:36.046] [warning] Requested height: 5 is less than the minimum height: 24 required by the modules
+[2025-01-24 14:04:36.046] [info] Bar configured (width: 1280, height: 24) for output: eDP-1
+[2025-01-24 14:04:36.046] [warning] Requested height: 5 is less than the minimum height: 24 required by the modules
+[2025-01-24 14:04:36.046] [info] Bar configured (width: 1280, height: 24) for output: HDMI-A-1
+[2025-01-24 14:04:36.051] [info] Bar configured (width: 1280, height: 24) for output: HDMI-A-1
+
+(waybar:1153): Gdk-WARNING **: 14:05:11.961: ../gtk/gdk/wayland/gdkcursor-wayland.c:243 cursor image size (64x64) not an integermultiple of scale (3)
+[2025-01-24 14:13:03.881] [info] Bar removed from output: HDMI-A-1
+Terminated

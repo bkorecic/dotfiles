@@ -1,4 +1,4 @@
-import = ["/home/bkorecic/.config/alacritty/catppuccin/catppuccin-frappe.toml"]
+general.import = ["/home/bkorecic/.config/alacritty/themes/active.toml"]
 
 [env]
 TERM = "xterm-256color"
