@@ -1,0 +1,10 @@
+inherits = "tokyonight"
+# Remove italics
+function = { fg = "blue" }
+keyword = { fg = "purple" }
+
+# Change background
+"ui.background" = {}
+"ui.text" = {}
+# Change jump labels to an unused color
+"ui.virtual.jump-label" = { fg = "red" }
