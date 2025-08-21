@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Hyprpaper
+GenericName=Wallpaper Manager
+Comment=Wallpaper utility for Hyprland
+Exec=hyprpaper
+TryExec=hyprpaper
+Icon=
+Terminal=false
+Categories=Graphics;
+StartupNotify=false
+OnlyShowIn=Hyprland;
