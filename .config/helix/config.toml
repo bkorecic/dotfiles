@@ -7,8 +7,8 @@ color-modes = true
 auto-pairs = true
 completion-timeout = 5
 
-[editor.lsp]
-display-inlay-hints = true
+[editor.soft-wrap]
+enable = true
 
 [editor.cursor-shape]
 insert = "bar"

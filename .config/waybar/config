@@ -1,28 +1,56 @@
 {
     "layer": "top", // Waybar at top layer
     // "position": "bottom", // Waybar position (top|bottom|left|right)
-    "height": 5, // Waybar height (to be removed for auto height)
+    "height": 30, // Waybar height (to be removed for auto height)
     // "width": 1280, // Waybar width
     "spacing": 4, // Gaps between modules (px)
+    // "margin-top": 8,
     // Choose the order of the modules
-    "modules-left": ["hyprland/workspaces"],
-    "modules-center": ["clock"],
-    "modules-right": ["pulseaudio", "network", "backlight", "battery", "tray"],
+    "modules-left": ["custom/lock", "cpu", "memory"],
+    "modules-center": ["hyprland/workspaces"],
+    "modules-right": ["wireplumber", "clock", "tray"],
     "tray": {
         // "icon-size": 21,
         "spacing": 10
     },
     "clock": {
+        "actions":  {
+            "on-scroll-up": "shift_up",
+            "on-scroll-down": "shift_down"
+        },
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "format-alt": "{:%Y-%m-%d}"
     },
+    "hyprland/workspaces": {
+        "format": "{icon}",
+        "format-icons": {
+            "active": "",
+            "visible": "",
+            "default": "",
+            "empty": "",
+            "urgent": ""
+        },
+        "persistent-workspaces": {
+            "DP-1": [1,2,3,4,5],
+            "HDMI-A-1": [6,7,8,9,10]
+        }
+    },
+    "custom/lock": {
+        "format": "",
+        "on-click": "hyprlock"
+    },
     "cpu": {
-        "format": "{usage}% ",
-        "tooltip": false
+        "format": "{usage}% "
     },
     "memory": {
-        "format": "{}% "
-    },
+		"interval": 5,
+		"format": "{used:0.1f}G/{total:0.1f}G ",
+		"states": {
+			"warning": 70,
+			"critical": 90
+		},
+		"tooltip": false
+	},
     "temperature": {
         // "thermal-zone": 2,
         // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
@@ -59,24 +87,11 @@
         "format-disconnected": "Disconnected ⚠",
         "format-alt": "{ifname}: {ipaddr}/{cidr}"
     },
-    "pulseaudio": {
-        // "scroll-step": 1, // %, can be a float
-        "format": "{volume}% {icon} {format_source}",
-        "format-bluetooth": "{volume}% {icon} {format_source}",
-        "format-bluetooth-muted": " {icon} {format_source}",
-        "format-muted": " {format_source}",
-        "format-source": "{volume}% ",
-        "format-source-muted": "",
-        "format-icons": {
-            "headphone": "",
-            "hands-free": "",
-            "headset": "",
-            "phone": "",
-            "portable": "",
-            "car": "",
-            "default": ["", "", ""]
-        },
-        "on-click": "pavucontrol"
+    "wireplumber": {
+        "format": "{volume}% {icon}",
+        "format-muted": "󰸈",
+        "on-click": "pavucontrol",
+        "format-icons": ["", "", ""]
     },
     "custom/media": {
         "format": "{icon} {}",
