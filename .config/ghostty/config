@@ -1,0 +1,9 @@
+font-family = RobotoMono Nerd Font Propo
+
+theme = tokyonight_moon
+
+background-opacity = 0.9
+window-padding-x = 0
+
+cursor-style = block
+cursor-style-blink = false
