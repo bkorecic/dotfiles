@@ -1,0 +1,17 @@
+// ────────────── Input Configuration ──────────────
+// https://github.com/YaLTeR/niri/wiki/Configuration:-Input
+
+input {
+	keyboard {
+		xkb {
+			layout "us"
+			variant "altgr-intl"
+			options "shift:both_capslock,caps:super"
+		}
+	}
+
+	touchpad {
+		tap // Enable tap-to-click
+		natural-scroll // Enable natural (macOS-style) scrolling
+	}
+}

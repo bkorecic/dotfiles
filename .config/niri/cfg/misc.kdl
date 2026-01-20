@@ -1,0 +1,29 @@
+prefer-no-csd
+screenshot-path null
+
+environment {
+	ELECTRON_OZONE_PLATFORM_HINT "auto"
+	QT_QPA_PLATFORM "wayland"
+	QT_WAYLAND_DISABLE_WINDOWDECORATION "1"
+	XDG_SESSION_TYPE "wayland"
+	XDG_CURRENT_DESKTOP "niri"
+	QT_QPA_PLATFORMTHEME "gtk3"
+}
+
+hotkey-overlay {
+	skip-at-startup
+}
+
+recent-windows {
+	binds {
+		Alt+Tab         { next-window scope="output"; }
+		Alt+Shift+Tab   { previous-window scope="output"; }
+		Alt+grave       { next-window filter="app-id"; }
+		Alt+Shift+grave { previous-window filter="app-id"; }
+	}
+}
+
+clipboard {
+	disable-primary
+}
+
