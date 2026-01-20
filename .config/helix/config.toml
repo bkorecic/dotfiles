@@ -1,0 +1,47 @@
+theme = "github_light"
+
+[editor]
+cursorline = true
+bufferline = "multiple"
+color-modes = true
+auto-pairs = true
+completion-timeout = 5
+
+[editor.soft-wrap]
+enable = true
+
+[editor.cursor-shape]
+insert = "bar"
+
+[editor.indent-guides]
+character = "┊"
+render = true
+skip-levels = 0
+
+[editor.inline-diagnostics]
+cursor-line = "hint"
+
+[keys.normal]
+# Lazygit
+C-g = [
+    ":write-all",
+    ":new",
+    ":insert-output lazygit",
+    ":buffer-close!",
+    ":redraw",
+    ":reload-all"
+]
+# Navigate splits
+C-h = "@<C-w>h"
+C-j = "@<C-w>j"
+C-k = "@<C-w>k"
+C-l = "@<C-w>l"
+# Navigate bufferline
+"tab" = ":bn"
+"S-tab" = ":bp"
+# Others
+"ret" = "goto_word"
+
+
+[keys.normal.space]
+x = ":buffer-close"

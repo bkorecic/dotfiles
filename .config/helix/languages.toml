@@ -1,0 +1,12 @@
+[language-server.clangd.config]
+fallbackFlags = ["-std=c++20"]
+
+[[language]]
+name = "typst"
+formatter.command = "typstyle"
+auto-format = true
+
+[[language]]
+name = "astro"
+formatter = { command = "prettier", args = ["--plugin", "prettier-plugin-astro", "--parser", "astro"] }
+auto-format = true
