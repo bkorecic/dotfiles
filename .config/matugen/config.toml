@@ -1,0 +1,6 @@
+[config]
+
+[templates.foot]
+input_path = '~/.config/matugen/templates/foot.ini'
+output_path = '~/.config/foot/theme.ini'
+post_hook = 'dms ipc call theme getMode | grep -q light && pkill -USR1 foot || pkill -USR2 foot'
