@@ -4,3 +4,8 @@
 input_path = '~/.config/matugen/templates/foot.ini'
 output_path = '~/.config/foot/theme.ini'
 post_hook = 'dms ipc call theme getMode | grep -q light && pkill -USR1 foot || pkill -USR2 foot'
+
+[templates.helix]
+input_path = '/dev/null'
+output_path = '/dev/null'
+post_hook = '~/.config/helix/refresh-theme.sh'
