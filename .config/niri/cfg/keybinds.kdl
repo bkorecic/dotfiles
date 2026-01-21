@@ -193,6 +193,7 @@ binds {
 	Ctrl+XF86Launch1 { screenshot-screen; }
 	Alt+XF86Launch1 { screenshot-window; }
 	Print { screenshot; }
+	Mod+O { screenshot; }
 	Ctrl+Print { screenshot-screen; }
 	Alt+Print { screenshot-window; }
 	// === System Controls ===
