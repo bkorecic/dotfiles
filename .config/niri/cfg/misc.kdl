@@ -27,3 +27,8 @@ clipboard {
 	disable-primary
 }
 
+gestures {
+	hot-corners {
+		off
+	}
+}
