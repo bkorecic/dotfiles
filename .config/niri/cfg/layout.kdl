@@ -1,6 +1,6 @@
 layout {
-	gaps 4 // Gap between windows
-	//center-focused-column "never" // Don’t auto-center focused column
+	always-center-single-column
+	gaps 4
 	background-color "transparent"
 
 	border {
