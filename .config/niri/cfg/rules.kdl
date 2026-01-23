@@ -22,12 +22,12 @@ layer-rule {
 }
 
 window-rule {
-	match is-active=false
+	match app-id="foot" is-active=false
 	opacity 0.9
 }
 
 window-rule {
-	match app-id=r#"firefox$"# title="^Picture-in-Picture$"
+	match app-id="firefox" title="^Picture-in-Picture$"
 	match app-id="zoom"
 	open-floating true
 }
